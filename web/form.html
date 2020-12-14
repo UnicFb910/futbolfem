@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="author" content="Unai Fernández">
+        <meta name="description" content="Formulari satisfacció FC Barcelona Femení">
+        <meta name="keywords" content="Formulari satisfacció FC Barcelona Femení">
+        <meta name="generator" content="VSCode">
+        <link rel="icon" href="../img/icon.png">
+        <title>Formulari satisfacció - FC Barcelona Femení</title>
+    </head>
+    <body>
+        <header>
+            <img src="../img/banner_iberdrola.jpg" alt="banner liga hiberdrola">
+        </header>
+        <nav id="top-menu-nav"> 
+            <ul id="top-menu" class="nav">
+                <li><a href="./index.html">Inici</a></li> 
+                <li><a href="./classif.html">Classificació</a></li> 
+                <li><a href="./resultats.html">Resultats</a></li> 
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="./infogeneral.html">Informació</a></li> 
+                <li><a href="./planter.html">Planter</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Formulari satisfacció</h1>
+            <form name="formulariSatisfaccio" action="./validaenquesta.php" method="POST">
+                <p>
+                  <label for="idEmail"><b>Correu electrònic</b></label>
+                  <input id="idEmail" type="email" placeholder="Introduce tu correo electrónico" name="correo" required>
+                </p>
+                <p>
+                  <label for="idName"><b>Contraseña</b></label>
+                  <input id="idName" type="text" placeholder="Introduce tu nombre completo" name="nombre" required>
+                </p>
+                <p>
+                    <label for="idPuntuacio"><b>Puntuació Web</b></label>
+                    <input id="idPuntuacio" name="puntuacio" type="number" min="1" max="5" step="1" value="0" required>
+                </p>
+                <p>
+                    <label for="valoracioGlobal"><b>Valoració Global</b></label>
+                    <select id="valoracioGlobal" name="valoracio">
+                        <option value="excelent" selected>Excel·lent</option>
+                        <option value="notable">Notable</option>
+                        <option value="bona">Bona</option>
+                        <option value="regular">Regular</option>
+                        <option value="dolenta">Dolenta</option>
+                      </select>
+                </p>
+                <p>
+                    <label for="idColor"><b>Color ideal del tema</b></label>
+                    <input id="idColor" name="color1" type="color" value="#FFFFFF">
+                </p>
+                <p>
+                    <label for="idObservacions"><b>Observacions</b></label>
+                    <textarea id="idObservacions" name="observacions" rows="5" cols="70">
+                        
+                    </textarea>
+                </p>
+                <p>
+                  <button type="submit">Enviar</button> <input value="Netejar" type="reset">
+                </p>
+            </form>
+        </main>
+        <footer>
+            <a rel="nofollow" target="_blank" href="https://www.facebook.com/fcbarcelona/"><img src="../img/facebook-logo.png" width="50" height="50" alt="logo facebook"></a>
+            <a rel="nofollow" target="_blank" href="https://twitter.com/fcbarcelona_es"><img src="../img/twitter-logo.png" width="50" height="50" alt="logo twitter"></a>
+            <br>
+            <br>
+            <address>
+                Palau Blaugrana<br><br>
+                Av. de Joan XXIII, s/n<br>
+                08028, Barcelona <br>
+                Catalunya<br>
+            </address>
+            <p>© Copyright FC Barcelona Pàgina Oficial del FC Barcelona</p>
+        </footer>
+    </body>
+</html>
