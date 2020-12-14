@@ -1,0 +1,24 @@
+footer {
+    margin-top: 650px;
+}
+
+#background {
+    background-image: url("../img/campnou.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    height: 100%;
+    padding: 295px;
+}
+main {
+    margin-bottom: -600px;
+}
+aside {
+    border: 1px solid black;
+    width: 50%;
+    float:right;
+    background:#fff;
+    margin-top: -263px;
+    padding: 20px;   
+  }

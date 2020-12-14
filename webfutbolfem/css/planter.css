@@ -1,0 +1,10 @@
+#plantilla tr, td {
+    border: 2px solid rgb(48, 45, 45);
+    padding: 10px;
+}
+td img {
+    width: 300px;
+}
+table {
+    font-family: Arial, "Times New Roman", sans-serif;
+}
